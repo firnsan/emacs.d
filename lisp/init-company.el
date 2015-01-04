@@ -30,4 +30,18 @@
      (setq company-clang-insert-arguments nil)
      ))
 
+
+(custom-set-faces
+  `(company-tooltip ((t :background "white" :foreground "black")))
+   `(company-tooltip-selection ((t :background "steelblue" :foreground "white")))
+    `(company-tooltip-mouse ((t :background "blue" :foreground "white")))
+     `(company-tooltip-common ((t :background "white" :foreground "black")))
+      `(company-tooltip-common-selection ((t t :background "white" :foreground "black")))
+       ;; `(company-tooltip-annotation ((t :background "" :foreground "")))
+       `(company-scrollbar-fg ((t :background "black")))
+        `(company-scrollbar-bg ((t :background "gray")))
+         `(company-preview ((t :background nil :foreround "darkgray")))
+          `(company-preview-common ((t :background nil :foreground "darkgray")))
+)
+
 (provide 'init-company)

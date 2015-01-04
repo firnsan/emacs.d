@@ -80,7 +80,7 @@ ARCHIVE is the string name of the package archive.")
                          ))
 
 ;; Un-comment below line if you download zip file from https://github.com/redguardtoo/myelpa/archive/master.zip and extract its content into ~/myelpa/
-;; (setq package-archives '(("myelpa" . "~/projs/myelpa")))
+(setq package-archives '(("myelpa" . "~/.myelpa")))
 
 (if (not *emacs24*) (add-to-list 'package-archives '("localelpa" . "~/.emacs.d/localelpa")))
 
