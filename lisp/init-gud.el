@@ -1,3 +1,6 @@
+
+(setq gdb-many-windows t)
+
 (defvar gud-overlay
   (let* ((ov (make-overlay (point-min) (point-min))))
     (overlay-put ov 'face 'secondary-selection)
