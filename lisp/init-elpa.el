@@ -242,7 +242,7 @@ ARCHIVE is the string name of the package archive.")
 (require-package 'flyspell-lazy)
 ;;zhao(require-package 'bbdb '(20130421 1145 0) nil)
 (require-package 'iedit)
-(require-package 'pomodoro '(20130114 1543 0) nil)
+;;zhao:番茄工作法 (require-package 'pomodoro '(20130114 1543 0) nil)
 (require-package 'flymake-lua)
 (require-package 'dropdown-list)
 (if *emacs24* (require-package 'yasnippet '(0 9 0 1) nil))
@@ -269,7 +269,7 @@ ARCHIVE is the string name of the package archive.")
 (if *emacs24* (require-package 'git-gutter '(0 71) nil))
 (require-package 'fakir)
 (require-package 'f)
-(require-package 'elnode) ;; elnode dependent on f
+;;zhao: elisp写的web服务器 (require-package 'elnode) ;; elnode dependent on f
 (when *emacs24*
   (require-package 'anaconda-mode)
   (require-package 'company-anaconda))

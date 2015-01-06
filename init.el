@@ -110,7 +110,7 @@
 (require 'init-which-func)
 (require 'init-move-window-buffer)
 ;; (require 'init-gist)
-(require 'init-moz)
+;;zhao:控制firefox的，需要在firefox安装mozrepl插件 (require 'init-moz)
 (require 'init-gtags)
 ;; use evil mode (vi key binding)
 (require 'init-evil)
@@ -148,12 +148,12 @@
 
 (setq idle-require-idle-delay 3)
 (setq idle-require-symbols '(init-writting
-                             init-elnode
+                             ;;zhao: elisp写的web服务器 init-elnode
                              init-doxygen
-                             init-pomodoro
-                             ;;zhao init-emacspeak
+                             ;;zhao: 番茄工作法 init-pomodoro
+                             ;;zhao: init-emacspeak
                              init-artbollocks-mode
-                             ;;zhao init-emacs-w3m
+                             ;;zhao: init-emacs-w3m
                              init-semantic))
 (idle-require-mode 1) ;; starts loading
 
