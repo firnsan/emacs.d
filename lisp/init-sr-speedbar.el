@@ -1,3 +1,4 @@
+(add-hook 'speedbar-mode-hook 'semantic-mode) ;;没有semantic做代码分析的话，tags列表不准确
 (autoload 'sr-speedbar-toggle "sr-speedbar")
 
 ;; sr-speedbar config
@@ -6,8 +7,11 @@
 ;; no auto-refresh
 (setq sr-speedbar-auto-refresh nil)
 
-(setq sr-speedbar-width-console 30)
-(setq sr-speedbar-width-x 30)
+(setq sr-speedbar-width 30)
+;; (setq sr-speedbar-default-width 20)
+;; (setq sr-speedbar-width-console 20)
+;; (setq sr-speedbar-width-x 20)
+;; (setq sr-speedbar-max-width 20)
 
 ;; regular speedbar config
 (setq speedbar-show-unknown-files t)

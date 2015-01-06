@@ -64,7 +64,7 @@
 (require 'init-frame-hooks)
 ;; any file use flyspell should be initialized after init-spelling.el
 ;; actually, I don't know which major-mode use flyspell.
-(require 'init-spelling)
+;;zhao: 很多buff刚打开都显示flyspell插件错误 (require 'init-spelling)
 (require 'init-xterm)
 ;;(require 'init-osx-keys) 不需要Mac按键
 (require 'init-gui-frames)
