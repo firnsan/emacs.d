@@ -66,11 +66,11 @@
 ;; actually, I don't know which major-mode use flyspell.
 (require 'init-spelling)
 (require 'init-xterm)
-(require 'init-osx-keys)
+;;(require 'init-osx-keys) 不需要Mac按键
 (require 'init-gui-frames)
 (require 'init-ido)
 (require 'init-maxframe)
-(require 'init-proxies)
+;;(require 'init-proxies) 为什么需要代理 
 (require 'init-dired)
 (require 'init-isearch)
 (require 'init-uniquify)
@@ -85,18 +85,18 @@
 (require 'init-fonts)
 (require 'init-git)
 (require 'init-crontab)
-(require 'init-textile)
+;;(require 'init-textile) 一种markdown
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
+;;(require 'init-erlang) 不需要erlang
 (require 'init-javascript)
 (when *emacs24*
   (require 'init-org)
   (require 'init-org-mime))
 (require 'init-css)
 (require 'init-python-mode)
-(require 'init-haskell)
-(require 'init-ruby-mode)
+;;(require 'init-haskell) 一种函数式语言
+;;(require 'init-ruby-mode) 不要ruby 
 (require 'init-lisp)
 (require 'init-elisp)
 (if *emacs24* (require 'init-yasnippet))
@@ -105,7 +105,7 @@
 (require 'init-cc-mode)
 (require 'init-gud)
 (require 'init-cmake-mode)
-(require 'init-csharp-mode)
+;;(require 'init-csharp-mode) 不需要c#
 (require 'init-linum-mode)
 (require 'init-which-func)
 (require 'init-move-window-buffer)
@@ -117,7 +117,7 @@
 (require 'init-sh)
 (require 'init-ctags)
 (require 'init-ace-jump-mode)
-(require 'init-bbdb)
+;;(require 'init-bbdb) 不需要地址簿 
 (require 'init-gnus)
 (require 'init-lua-mode)
 (require 'init-workgroups2)
@@ -127,10 +127,10 @@
 (require 'init-slime)
 (when *emacs24* (require 'init-company))
 (require 'init-stripe-buffer)
-(require 'init-eim) ;;  cannot be idle-required
+;;(require 'init-eim) ;;  cannot be idle-required 不需要输入法 
 (require 'init-hs-minor-mode)
 ;; need statistics of keyfreq asap
-(require 'init-keyfreq)
+;;(require 'init-keyfreq) 记录按键的频率，不需要
 
 
 ;; misc has some crucial tools I need immediately
@@ -138,7 +138,7 @@
 (require 'init-misc)
 
 ;; color theme
-(require 'color-theme)
+;;(require 'color-theme) 不需要主题
 ;;(require 'color-theme-molokai)
 ;;(color-theme-molokai)
 ;; This line must be after color-theme-molokai! Don't know why.
