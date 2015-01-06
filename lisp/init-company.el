@@ -1,5 +1,5 @@
-(add-hook 'prog-mode-hook 'global-company-mode)
-(add-hook 'cmake-mode-hook 'global-company-mode)
+(add-hook 'cmake-mode-hook 'company-mode)
+(add-hook 'prog-mode-hook 'company-mode) ;;不要用global-company-mode，否则所以buff都会加上这个mode
 
 ;; does not matter, I never use this hotkey
 (global-set-key (kbd "C-c o") 'company-complete)
