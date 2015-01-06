@@ -151,9 +151,9 @@
                              init-elnode
                              init-doxygen
                              init-pomodoro
-                             init-emacspeak
+                             ;;zhao init-emacspeak
                              init-artbollocks-mode
-                             init-emacs-w3m
+                             ;;zhao init-emacs-w3m
                              init-semantic))
 (idle-require-mode 1) ;; starts loading
 
