@@ -5,6 +5,16 @@
       'c-basic-offset
       (c-lineup-topmost-intro-cont langelem))))
 
+;;把c语言风格设置为k&r风格
+(add-hook 'c-mode-hook
+		  '(lambda ()
+			 (c-set-style "k&r")))
+
+;;set c++ style as stroustrup style
+(add-hook 'c++-mode-hook
+		  '(lambda ()
+			 (c-set-style "stroustrup")))
+
 
 ;C/C++ SECTION
 (defun my-c-mode-hook ()
