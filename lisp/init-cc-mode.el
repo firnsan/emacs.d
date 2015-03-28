@@ -6,14 +6,14 @@
       (c-lineup-topmost-intro-cont langelem))))
 
 ;;把c语言风格设置为k&r风格
-(add-hook 'c-mode-hook
-		  '(lambda ()
-			 (c-set-style "k&r")))
+;; (add-hook 'c-mode-hook
+;; 		  '(lambda ()
+;; 			 (c-set-style "k&r")))
 
 ;;set c++ style as stroustrup style
-(add-hook 'c++-mode-hook
-		  '(lambda ()
-			 (c-set-style "stroustrup")))
+;; (add-hook 'c++-mode-hook
+;; 		  '(lambda ()
+;; 			 (c-set-style "stroustrup")))
 
 
 ;C/C++ SECTION
@@ -110,7 +110,7 @@
           (lambda ()
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               ;; indent
-              (fix-c-indent-offset-according-to-syntax-context 'substatement 0)
+              ;; (fix-c-indent-offset-according-to-syntax-context 'substatement 0)
               (fix-c-indent-offset-according-to-syntax-context 'func-decl-cont 0)
 
               ;; gtags (GNU global) stuff

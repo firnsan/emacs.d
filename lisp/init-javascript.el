@@ -12,14 +12,14 @@
 (setq auto-mode-alist (cons '("\\.json$" . json-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.jason$" . json-mode) auto-mode-alist))
 
-;; {{ js2-mode or javascript-mode
-(setq js2-use-font-lock-faces t
-      js2-mode-must-byte-compile nil
-      js2-idle-timer-delay 0.5 ;; could not be too big for real time syntax check
-      js2-indent-on-enter-key t
-      js2-skip-preprocessor-directives t
-      js2-auto-indent-p t
-      js2-bounce-indent-p t)
+;; {{ js2-mode or javascript-mode ;;因为这段代码，导致回车有时候会缩进，有时候又不缩进
+;; (setq js2-use-font-lock-faces t
+;;       js2-mode-must-byte-compile nil
+;;       js2-idle-timer-delay 0.5 ;; could not be too big for real time syntax check
+;;       ;; js2-indent-on-enter-key t
+;;       js2-skip-preprocessor-directives t
+;;       js2-auto-indent-p t
+;;       js2-bounce-indent-p t)
 
 (setq javascript-common-imenu-regex-list
       '(("Controller" "\.controller( *'\\([^']+\\)" 1)
