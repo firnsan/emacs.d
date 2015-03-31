@@ -340,8 +340,8 @@ grab matched string, cssize them, and insert into kill ring"
   "Create tags file."
   (interactive "DDirectory: ")
   (shell-command
-   (format "ctags -f %s/TAGS -e -R %s" dir-name (directory-file-name dir-name))
-   ;;(format "ctags -f %s/TAGS -e -R --c++-kinds=+p --fields=+iaS --extra=+q %s" dir-name (directory-file-name dir-name))
+   ;; (format "ctags -f %s/TAGS -e -R %s" dir-name (directory-file-name dir-name)) 这个生成的是invalid的
+   (format "ctags -f %s/TAGS -e -R --c++-kinds=+p --fields=+iaS --extra=+q %s" dir-name (directory-file-name dir-name))
    )
   )
 
