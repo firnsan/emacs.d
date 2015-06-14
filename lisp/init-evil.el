@@ -13,10 +13,10 @@
 ;; }}
 
 ;; {{ https://github.com/syl20bnr/evil-escape
-(require 'evil-escape)
+;; evil-escape导致无法输入fd (require 'evil-escape)
 ;; key-chord is used by evil-escape
-(setq key-chord-two-keys-delay 0.5)
-(evil-escape-mode 1)
+;; (setq key-chord-two-keys-delay 0.5)
+;; (evil-escape-mode 1)
 ;; }}
 
 ;; Move back the cursor one position when exiting insert mode
